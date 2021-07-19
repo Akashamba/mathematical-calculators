@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../../components/navbar/navbar.component.jsx'
-import calculateRoots from '../../utilities.js'
+// import calculateRoots from '../../utilities.js'
 import './quadratic.styles.css'
 
 export default function quadratic() {
