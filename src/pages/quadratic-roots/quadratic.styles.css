@@ -1,0 +1,21 @@
+.quadratic-equation {
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.quadratic-inputs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.quadratic-input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.quadratic-input:focus-visible {
+    outline: none;
+    border-color: rgb(0, 153, 255);
+}

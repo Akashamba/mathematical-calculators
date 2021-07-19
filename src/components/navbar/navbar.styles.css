@@ -1,0 +1,23 @@
+.navbar {
+    height: 15vh;
+    background-color: rgb(0, 153, 255);
+    color: #fff;
+}
+
+.navbar-content {
+    display: flex;
+    padding-top: 30px;
+    align-items: baseline;
+    margin-left: 20px;
+    height: 100%;
+}
+
+.main-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.sec-title {
+    font-size: 0.9rem;
+    margin-left: 25px;
+}

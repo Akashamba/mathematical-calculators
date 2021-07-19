@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Homepage from './pages/homepage/homepage.component.jsx'
+import Quadratic from './pages/quadratic-roots/quadratic.component.jsx'
+import GCD from './pages/gcd/gcd.component.jsx'
+import {Switch, Route} from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route exact path="/" component={Homepage}/>
+        <Route exact path="/quadratic-equation-root" component={Quadratic}/>
+        <Route exact path="/gcd" component={GCD}/>
+      </Switch>
     </div>
   );
 }
