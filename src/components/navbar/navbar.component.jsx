@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './navbar.styles.css'
 
 export default function Navbar(props) {
@@ -6,9 +7,9 @@ export default function Navbar(props) {
         <div className="navbar">
             <div className="navbar-content">
                 <span className="main-title">{props.appName}</span>
-                <span className={props.appName === undefined ? 'main-title' : 'sec-title'}>
+                <Link to="/" className={props.appName === undefined ? 'main-title' : 'sec-title'}>
                     Mathematical Calculators
-                </span>
+                </Link>
             </div>
         </div>
     )

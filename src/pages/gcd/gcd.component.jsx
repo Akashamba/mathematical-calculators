@@ -1,6 +1,5 @@
 import React from 'react'
-// import Navbar from '../../components/navbar/navbar.component.jsx'
-// import calculateGCD from '../../utilities.js'
+import Navbar from '../../components/navbar/navbar.component.jsx'
 import './gcd.styles.css'
 
 class GCD extends React.Component {
@@ -34,6 +33,7 @@ class GCD extends React.Component {
     render() {
         return (
             <div>
+            <Navbar appName="Greatest Common Divisor (GCD)"/>
                 <h1>GCD Calculator</h1>
                 <p>Enter Numbers</p>
                 <form onSubmit={this.handleSubmit}>
